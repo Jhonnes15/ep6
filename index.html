@@ -6,18 +6,35 @@
     <title>tarefas</title>
 </head>
 <body onload="tarefas()">
-    <script type="text/javascript">
-        function matematica(){
-            var bah = prompt("Escreva seu nome");
-            if(bah == Jhonnes){
-               alert("Bem vindo as tarefas de matematica do 1 ano do ensino médio.");
-            }
+    <span id="nome_usuario"></span>
+    <script src="script.js"></script>
+    <form>
+        <h3>questao 1</h3>
+        <input type="radio" name="questao1" value="correto"> essa é a aprimeira resposta <br>
+        <input type="radio" name="questao1" value="incorreto"> essa é a aprimeira resposta <br>
+        <input type="radio" name="questao1" value="incorreto"> essa é a aprimeira resposta <br>
+        <input type="radio" name="questao1" value="incorreto"> essa é a aprimeira resposta <br>
+        
 
-            else if(bah == Luigi){
-                alert("Bem vindo as tarefas de matematica do 1 ano do ensino médio. ");
-            }
-        }
-    </script>
-    
+
+        <h3>questao 2</h3>
+        <input type="radio" name="questao2" value="correto"> essa é a aprimeira resposta <br>
+        <input type="radio" name="questao2" value="incorreto"> essa é a aprimeira resposta <br>
+        <input type="radio" name="questao2" value="incorreto"> essa é a aprimeira resposta <br>
+        <input type="radio" name="questao2" value="incorreto"> essa é a aprimeira resposta <br>
+
+
+        <button type="button" onclick="questionario()">resolver</button>
+        
+    </form>
+
+
+
+
+
+
+
+   
+
 </body>
 </html>
