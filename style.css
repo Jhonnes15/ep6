@@ -1,0 +1,13 @@
+header{
+    text-align: center;
+    background-color: dimgrey;
+    border-radius: 25px;
+}
+.questoes{
+    text-align: center;
+    align-items: center;
+}
+.alternativas{
+    text-align: center;
+    align-items: center;
+}
