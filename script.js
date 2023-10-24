@@ -17,4 +17,26 @@ function tarefas(){
         tarefas();
     }
 
+  function funcao_resposta(){
+
+    var resp1 = document.querySelector('input[name="questao1"]:checked');
+
+    if(resp1){
+        if(resp1.value == "correta"){
+            document.getElementById("resp_certa_1").innerHTML = "correta!"
+        }
+     else{
+     if(resp1.value == "correta"){
+      document.getElementById("resp_errada_1").innerHTML = "correta!"
+        }
+    }
+    
+    
+    
+    
+    
+    
+    }
+  }
+
 }
