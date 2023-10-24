@@ -4,12 +4,21 @@ header{
     border-radius: 25px;
 }
 .questoes{
-    text-align: center;
-    align-items: center;
+   
 }
 .alternativas{
+   
+}
+
+.dissertativas{
+    background-color: cyan;
     text-align: center;
-    align-items: center;
+    image-rendering: auto;
+}
+
+.dis{
+    height: 150px;
+    width: 170px;
 }
 .titulo{
     text-align: center;
