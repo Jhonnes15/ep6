@@ -1,23 +1,17 @@
-function tarefas(){
-    var bah = prompt("Escreva seu nome");
-    if(bah == "Jhonnes"){
-       alert("Bem vindo as tarefas de matematica do 1 ano do ensino médio Jhonnes.");
-
-       document.getElementById("nome_usuario").innerHTML ="<p><h1>Bem vindo Jhonnes.<br></h1><h2>Essas são suas atividades:</h2></p>";
-
+function inclui_nome() {
+    var nome_variavel = prompt("Escreva seu nome:");
+    if(nome_variavel){
+        document.getElementById("inclui_nome").innerHTML = "Bem vindo, " + nome_variavel + "! Vamos começar?" ;
     }
-}
-    else if(bah == "Luigi"){
-        alert("Bem vindo as tarefas de matematica do 1 ano do ensino médio. ");
 
-        document.getElementById("nome_usuario").innerHTML ="<p><h1>Bem vindo Lulu.<br></h1><h2>Essas são suas atividades:</h2></p>";
-    }
     else{
-        alert("Nome não atribuido, preencha o nome.");
-        tarefas();
+        alert("Nome não atribuido!");
+        inclui_nome();
     }
 
-  function funcao_resposta(){
+}
+
+function funcao_resposta(){
     var resp1 = document.querySelector('input[name="questao1"]:checked');
     var resp2 = document.querySelector('input[name="questao2"]:checked');
     var resp3 = document.querySelector('input[name="questao3"]:checked');
@@ -28,7 +22,7 @@ function tarefas(){
     var resp8 = document.querySelector('input[name="questao8"]:checked');
     var resp9 = document.querySelector('input[name="questao9"]:checked');
     var resp10 = document.querySelector('input[name="questao10"]:checked');
-   
+
     if(resp1 && resp2 && resp3 && resp4 && resp5 && resp6 && resp7 && resp8 && resp9 && resp10){
         if(resp1.value == "correto"){
             document.getElementById("resp_correta_1").innerHTML = "correta!";

@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
-<body onload="tarefas()">
-    <script src="script.js"></script>
-    
+<body>
+    <header>
+        <h1>Teoria</h1>
+        <a href="index.html">Pagina principal</a>
+    </header>
+    <h1 class="teoria">Matrizes</h1>
+        <h3 class="Teoria1">
+             Matriz é uma tabela organizada em linhas e colunas no formato m x n, onde m representa o número de linhas (horizontal) e n o número de colunas (vertical).
+            A função das matrizes é relacionar dados numéricos. Por isso, o conceito de matriz não é só importante na Matemática, mas também em outras áreas já que as matrizes têm diversas aplicações.
+        </h3><br>
+
+        <h1>Representação de uma matriz</h1>
+        <h3>Na representação de uma matriz, os números reais geralmente são elementos inseridos entre colchetes, parênteses ou barras.
+            Exemplo: Venda dos bolos de uma confeitaria no primeiro bimestre do a
+        </h3>
+
+        <h3>
+            Produto                      janeiro   fevereiro
+            <br>	             	
+            Bolo de chocolate             500       490
+            <br>	                 	  
+            Bolo de morango               450	    490	              
+        </h3>
+        <h3>
+            Essa tabela apresenta dados em duas linhas (tipos de bolo) e duas colunas (meses do ano) e, por isso, trata-se de uma matriz 2 x 2. Veja a representação a seguir:
+        </h3>
+        <img src="data:image/png;base64,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" alt="">
 </body>
 </html>

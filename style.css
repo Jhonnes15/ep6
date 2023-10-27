@@ -1,26 +1,89 @@
-header{
-    text-align: center;
-    background-color: dimgrey;
-    border-radius: 25px;
-}
-.questoes{
-   
-}
-.alternativas{
-   
-}
-
-.dissertativas{
-    background-color: cyan;
-    text-align: center;
-    image-rendering: auto;
-}
-
-.dis{
-    height: 150px;
-    width: 170px;
-}
 .titulo{
     text-align: center;
     align-items: center;
+}
+body{
+    display: grid;
+    grid-template-areas: 
+    "cabe" "cabe"
+    "brac" "brac"
+    "prin" "prin"
+    "roda" "roda";
+}
+.verde{
+    color: green;
+}
+.vermelho{
+    color: red;
+}
+
+header{
+    background-color: darkgrey;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    border: solid 2px black;
+}
+nav{
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a{
+    margin: 0 10px;
+}
+main{
+    border: solid 2px black;
+}
+.rodape{
+    background-color: darkgrey;
+    color: black;
+    height: auto;
+    width: 100%;
+    font-size: 14px;
+    font-family: helvetica;
+    border: solid black 2px;
+}
+.rodape a{
+    text-decoration: none;
+    color: white;
+}
+.rodape p{
+    margin-bottom: 5px;
+}
+.rodape-div{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    margin: auto;
+    align-items: stretch;
+    padding: 60px 10px 40px 10px;
+}
+.rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+    display: flex;
+    width: calc(100% / 4 - 20px);
+    padding: 10px;
+}
+.rodape span{
+    font-size: 20px;
+    color: white;
+}
+.rodape-direitos{
+    width: calc(100% - 20px);
+    background-color: black;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
 }
