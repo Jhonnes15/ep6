@@ -167,21 +167,23 @@
         <br>
         <button type="button" onclick="funcao_resposta()">resolver</button>
     
-        <h2 class="dissertativas">Agora voce vai começar ar responder questoes dissertativas.</h2>
+        <h2 class="dissertativas">Calculos.</h2>
 
-        <h2>1)</h2> <img src="https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/matriz-identidade-exemplo-matriz-nula.jpg" class="dis"><br>
-        <label for=""><h2>Qual é o tipo dessa matriz? E como A é classificado?</h2></label><br>
-        <textarea name="historia" id="histora" cols="25" rows="7"></textarea>
-            
-            <h2>2)</h2> <img src="https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/matriz-identidade-ordem-4.jpg" class="dis"><br>
-            <label for=""><h2>Qual é o tipo dessa matriz? E como I é classificado?</h2></label><br>
-            <textarea name="historia" id="histora" cols="25" rows="7"></textarea>
-             
-    
-                <h2>3)</h2> <img src="https://escolaeducacao.com.br/wp-content/uploads/2020/04/questao5.jpg" class="dis"><br>
-                <label for=""><h2>Qual é o tipo dessa matriz? E quais devem ser os valores?</h2></label><br>
-                <textarea name="historia" id="histora" cols="25" rows="7"></textarea>
-                  
+      <form id="matri"><!--Dissertativas-->
+        <h3>1.</h3> <img src="https://www.coladaweb.com/wp-content/uploads/2016/03/20160302-6.png">
+        <h3>Calcule a matrix</h3>
+        <label for="coefA">a:</label><br>
+        <input type="number" id="coefA" name="coefA"><br>
+        <label for="coefB">b:</label><br>
+        <input type="number" id="coefB" name="coefB"><br>
+        <label for="coefC">c:</label><br>
+        <input type="number" id="coefC" name="coefC"><br>
+        <button type="button" id="solveEquation">resolver</button>
+        <p id="result"></p>
+    </form>
+
+
+
     
     <p id="quantos_acertos"></p>
     <button type="button" onclick="questionario()">resolver</button>
