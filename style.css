@@ -10,6 +10,12 @@ body{
     "prin" "prin"
     "roda" "roda";
 }
+
+body{
+    margin: 200px;
+}
+
+
 .verde{
     color: green;
 }
