@@ -1,4 +1,3 @@
-
 /**parte do index**/
 
 .titulo{
@@ -106,18 +105,29 @@ main{
 
 /**jhonnes html**/
 #teo{
-    margin: 200px;
-    padding: 20px;
+    margin: 500px;
+   text-align: center;
+   border: solid black 4px;
 }
+.imagens{
+    border: solid dodgerblue 4px;
+}
+.imagens1{
+    border: solid dodgerblue 4px;
 
+}.imagens2{
+    border: solid dodgerblue 4px;
 
+}.imagens3{
+    border: solid dodgerblue 4px;
+
+}.imagens4{
+    border: solid dodgerblue 4px;
+
+}
+.imagens5{
+    border: solid dodgerblue 4px;
+
+}
 /**responsividade**/
-body{
-    display:grid;
-    grid-template-areas:
-    "pr pr"
-    "se se"
-    "ul ul";
-    grid-gap: 10px;
-    grid-template-rows: 100px auto auto;
-}
+
