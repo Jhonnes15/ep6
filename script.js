@@ -1,16 +1,18 @@
+
+/**inclui nome no index**/
 function inclui_nome() {
     var nome_variavel = prompt("Escreva seu nome:");
     if(nome_variavel){
         document.getElementById("inclui_nome").innerHTML = "Bem vindo, " + nome_variavel + "! Vamos começar?" ;
     }
-
+/**index nome nao colocado**/
     else{
         alert("Nome não atribuido!");
         inclui_nome();
     }
 
 }
-
+/**checamento das respostas**/
 function funcao_resposta(){
     var resp1 = document.querySelector('input[name="questao1"]:checked');
     var resp2 = document.querySelector('input[name="questao2"]:checked');
@@ -24,13 +26,20 @@ function funcao_resposta(){
     var resp10 = document.querySelector('input[name="questao10"]:checked');
     var contador = 0;
 
+
+/**correçao e avaliaçao**/
     if(resp1 && resp2 && resp3 && resp4 && resp5 && resp6 && resp7 && resp8 && resp9 && resp10){
         if(resp1.value == "correto"){
             document.getElementById("resp_correta_1").innerHTML = "correta!";
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_1").innerHTML = "errou burro!";
+            document.getElementById("resp_errada_1").innerHTML = "errouPara descobrir o valor do produto a.b, precisamos primeiro conhecer o valor de a e b.
+             Sendo assim, vamos considerar a equação dada no problema".
+
+            Para resolver a equação, vamos calcular o valor de A2, o que é feito multiplicando-se a matriz A por ela mesma, ou seja:
+            
+            A ao quadrado igual a abre colchetes tabela linha com 1 2 linha com 0 1 fim da tabela fecha colchetes. abre colchetes tabela linha com 1 2 linha com 0 1 fim da tabela fecha colchetes !";
         }
        
         if(resp2.value == "correto"){
@@ -116,6 +125,5 @@ function funcao_resposta(){
     }
     
 }
-
 
 

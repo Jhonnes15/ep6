@@ -1,3 +1,6 @@
+
+/**parte do index**/
+
 .titulo{
     text-align: center;
     align-items: center;
@@ -15,14 +18,14 @@ body{
     margin: 200px;
 }
 
-
+/**sobre questoes certas e erradas**/
 .verde{
     color: green;
 }
 .vermelho{
     color: red;
 }
-
+/**index header**/
 header{
     background-color: darkgrey;
     color: black;
@@ -52,9 +55,14 @@ nav ul li{
 nav ul li a{
     margin: 0 10px;
 }
+
+
+/**index main**/
 main{
     border: solid 2px black;
 }
+
+/**index foter**/
 .rodape{
     background-color: darkgrey;
     color: black;
@@ -96,18 +104,14 @@ main{
     text-align: center;
 }
 
-
-.dissertativas{
-    
-}
-
+/**jhonnes html**/
 #teo{
     margin: 200px;
     padding: 20px;
 }
 
 
-
+/**responsividade**/
 body{
     display:grid;
     grid-template-areas:
