@@ -8,12 +8,12 @@
 </head>
 <body onload="inclui_nome()">
     <header>
-
                 <h1>Matemática</h1>
                 <a href="jhonnes.html">matrizes</a>
                 <a href="cadastro.html">cadastro</a>
 
     </header>
+    <div class="container">
     <br>
     <br>
     <br>
@@ -172,12 +172,55 @@
       <form id="matri"><!--Dissertativas-->
         <h3>1.</h3> <img src="https://www.coladaweb.com/wp-content/uploads/2016/03/20160302-6.png">
         <h3>Calcule a matrix</h3>
-        <label for="coefA">a:</label><br>
-        <input type="number" id="coefA" name="coefA"><br>
-        <label for="coefB">b:</label><br>
-        <input type="number" id="coefB" name="coefB"><br>
-        <label for="coefC">c:</label><br>
-        <input type="number" id="coefC" name="coefC"><br>
+        
+        <input type="---" id="matri">
+        <select id="operadores" onchange="ControleDeSelecao();">
+            <optgroup label="Calculos">
+                <option value="+">	+(somar)</option>
+                <option value="-">	-(subtrair)</option>
+            </optgroup>
+        </select>
+    <input type="text" id="txtValor2" size="5"><br>		
+    <input type="button" onclick="Calcular('coefA', 'coefB')" value="Calcular">
+    <input type="button" onclick="Limpar('coefA', 'coefB')" value="Limpar">
+    <p id="saida">Resultado:</p>
+    <hr>		
+
+    <h3>2.</h3> <img src="https://www.matematica.pt/images/faq/multiplicar-matrizes-impossivel.png">
+    <h3>Calcule a matrix</h3>
+    
+    <input type="---" id="matri">
+    <select id="operadores" onchange="ControleDeSelecao();">
+        <optgroup label="Calculos">
+            <option value="*">	x(subritrair)</option>
+            <option value="/">	:(dividir)</option>
+        </optgroup>
+    </select>
+<input type="text" id="txtValor2" size="5"><br>		
+<input type="button" onclick="Calcular('coefA', 'coefB')" value="Calcular">
+<input type="button" onclick="Limpar('coefA', 'coefB')" value="Limpar">
+<p id="saida">Resultado:</p>
+<hr>		
+
+<h3>3.</h3> <img src="https://pt-static.z-dn.net/files/da7/7f1aef79943a37b806f1c349756d7933.jpg">
+<h3>Calcule a matrix</h3>
+
+<input type="---" id="matri">
+<select id="operadores" onchange="ControleDeSelecao();">
+    <optgroup label="Calculos">
+        <option value="+">	+(somar)</option>
+        <option value="-">	-(subitrair)</option>
+    </optgroup>
+</select>
+<input type="text" id="txtValor2" size="5"><br>		
+<input type="button" onclick="Calcular('coefA', 'coefB')" value="Calcular">
+<input type="button" onclick="Limpar('coefA', 'coefB')" value="Limpar">
+<p id="saida">Resultado:</p>
+<hr>		
+
+
+
+
         <button type="button" id="solveEquation">resolver</button>
         <p id="result"></p>
     </form>
@@ -186,7 +229,6 @@
 
     
     <p id="quantos_acertos"></p>
-    <button type="button" onclick="questionario()">resolver</button>
     </main>
     <footer class="rodape" id="contato">
         <div class="rodape-div">
@@ -230,6 +272,7 @@
         <p class="rodape-direitos">Copyright © 2023 – Todos os Direitos Reservados.</p>
     </footer>
 
-
+    </div>
 </body>
+
 </html>

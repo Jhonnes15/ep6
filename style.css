@@ -31,6 +31,8 @@ header{
     align-items: center;
     border: solid 2px black;
 }
+
+
 nav{
     background-color: #555;
     color: #fff;
@@ -97,4 +99,21 @@ main{
 
 .dissertativas{
     
+}
+
+#teo{
+    margin: 200px;
+    padding: 20px;
+}
+
+
+
+body{
+    display:grid;
+    grid-template-areas:
+    "pr pr"
+    "se se"
+    "ul ul";
+    grid-gap: 10px;
+    grid-template-rows: 100px auto auto;
 }
